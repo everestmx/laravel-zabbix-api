@@ -1,5 +1,5 @@
 {
-    "name": "becker/laravel-zabbix-api",
+    "name": "everestmx/laravel-zabbix-api",
     "description": "This package provides a Zabbix API library for Laravel Framework",
     "type": "library",
     "keywords": [
