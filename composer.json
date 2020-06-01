@@ -19,13 +19,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Becker\\Zabbix\\": "src"
+            "Everestmx\\Zabbix\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Becker\\Zabbix\\ZabbixServiceProvider"
+                "Everestmx\\Zabbix\\ZabbixServiceProvider"
             ]
         }
     }

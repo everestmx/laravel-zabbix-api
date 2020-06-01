@@ -1,12 +1,15 @@
 <?php
 
-namespace Becker\Zabbix;
+namespace Everestmx\Zabbix;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class ZabbixServiceProvider
+ * @package Everestmx\Zabbix
+ */
 class ZabbixServiceProvider extends ServiceProvider
 {
-
     /**
      * Bootstrap any application services.
      *
@@ -15,7 +18,7 @@ class ZabbixServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/zabbix.php' => config_path('zabbix.php'),
+            __DIR__ . '/config/zabbix.php' => config_path('zabbix.php'),
         ], 'zabbix');
     }
 

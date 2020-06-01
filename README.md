@@ -6,10 +6,10 @@ This package provides a Zabbix API library for Laravel Framework. It uses the Ph
 
 #### Installation
 
-To get started, you should add the `becker/laravel-zabbix-api` Composer dependency to your project:
+To get started, you should add the `everestmx/laravel-zabbix-api` Composer dependency to your project:
 
 ```php
-composer require becker/laravel-zabbix-api
+composer require everestmx/laravel-zabbix-api
 ```
 
 #### Register the Service Provider
@@ -25,7 +25,7 @@ Open up the ``config/app.php``and register the new Service Provider:
  * Package Service Providers...
  */
 
-Becker\Zabbix\ZabbixServiceProvider::class,
+Everestmx\Zabbix\ZabbixServiceProvider::class,
 
 //...
 ```
@@ -67,7 +67,7 @@ class TestController extends Controller
     /**
      * The ZabbixApi instance.
      *
-     * @var \Becker\Zabbix\ZabbixApi
+     * @var \Everestmx\Zabbix\ZabbixApi
      */
     protected $zabbix;
     

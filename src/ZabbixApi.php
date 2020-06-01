@@ -1,8 +1,8 @@
 <?php
 
-namespace Becker\Zabbix;
+namespace Everestmx\Zabbix;
 
-use Becker\Zabbix\ZabbixApiAbstract;
+use Everestmx\Zabbix\ZabbixApiAbstract;
 
 /**
  * Concrete class for the Zabbix API.

@@ -1,9 +1,13 @@
 <?php
 
-namespace Becker\Zabbix;
+namespace Everestmx\Zabbix;
 
 use Exception;
 
+/**
+ * Class ZabbixException
+ * @package Everestmx\Zabbix
+ */
 class ZabbixException extends Exception
 {
     //
