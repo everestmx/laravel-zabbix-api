@@ -10,7 +10,17 @@ return [
     | This specifies the Zabbix Server host that Laravel will connect.
     |
     */
-    'host' => env('ZABBIX_HOST', 'localhost') . '/' . env('ZABBIX_API_FILE', 'api_jsonrpc.php'),
+    'host' => env('ZABBIX_HOST', 'http://localhost'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Zabbix Url
+    |--------------------------------------------------------------------------
+    |
+    | This specifies the Zabbix Server api_jsonrpc url that Laravel will connect.
+    |
+    */
+    'url' => env('ZABBIX_HOST', 'localhost') . '/' . env('ZABBIX_API_FILE', 'api_jsonrpc.php'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,4 +94,5 @@ return [
     |
     */
     'checkSsl' => env('ZABBIX_CHECK_SSL', true),
+
 ];

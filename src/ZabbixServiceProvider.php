@@ -31,14 +31,14 @@ class ZabbixServiceProvider extends ServiceProvider
     {
         $this->app->singleton('zabbix', function ($app) {
             return new ZabbixApi(
-                $apiUrl = $app['config']['zabbix.host'],
-                $user = $app['config']['zabbix.username'],
-                $password = $app['config']['zabbix.password'],
-                $httpUser = $app['config']['zabbix.http_username'],
-                $httpPassword = $app['config']['zabbix.http_password'],
-                $authToken = $app['config']['zabbix.authToken'],
-                $sslContext = $app['config']['zabbix.sslContext'],
-                $checkSsl = $app['config']['zabbix.checkSsl']
+                config('zabbix.url'),
+                config('zabbix.username'),
+                config('zabbix.password'),
+                config('zabbix.http_username'),
+                config('zabbix.http_password'),
+                config('zabbix.authToken'),
+                config('zabbix.sslContext'),
+                config('zabbix.checkSsl'),
             );
         });
     }
